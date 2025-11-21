@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+}
+
+
+header {
+    background: #222;
+    color: rgb(234, 190, 190);
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav {
+    display: flex;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: #e7f0ff;
+}
+
+.hero h1 span {
+    color: #293a84;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills {
+    padding: 60px 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.3s; 
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer .social-links a {
+    color: #66aaff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+@media (max-width: 1023px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #000;
+        padding: 15px;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        color: white;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.cert-btn {
+  display:inline-block;
+  padding:10px 12px;
+  border-radius:6px;
+  background:#3073d8;
+  color:rgb(235, 235, 235);
+  text-decoration:none;
+  margin:6px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.CSS" />
+</head>
+
+<body>
+
+    
+    <header>
+        <div class="logo">MyPortfolio</div>
+
+        <nav id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+
+ 
+    <section class="hero" id="home">
+        <h1>Hello, I'm <span>Raparthy Srivani</span></h1>
+        <p>A passionate learner exploring Web Development & AI tools.</p>
+    </section>
+
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a tech enthusiast who loves building beautiful and functional web pages 
+            using HTML, CSS, and JavaScript. I also explore AI-powered website-building tools.
+        </p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">GitHub</div>
+            <div class="skill-card">Responsive Design</div>
+            <div class="skill-card">AI Tools</div>
+        </div>
+        <div class="certificates">
+  <a class="cert-btn" href="https://drive.google.com/file/d/15IO0aXN7z1WiOBjrUfeHYbP-3pafiAKY/view?usp=drivesdk" target="_blank">STAAD.Pro Certificate</a><br>
+  <a class="cert-btn" href="https://www.credly.com/badges/629f178d-76be-4fd2-baf0-63a0ffff6fcd/linked_in_profile" target="_blank">iTwin Badge</a>
+</div>
+
+    </section>
+
+    <footer id="contact">
+        <p>Connect with me:</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/raparthy-srivani-b48989357">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="srivanisreedhar05@gmail.com">Email</a>
+        </div>
+        <p class="copy">© 2025 My Portfolio</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-links").classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
